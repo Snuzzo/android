@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
   <remote  name="aosp"
            fetch="https://android.googlesource.com/" />
-
+  <remote  name="github"
+           fetch="https://github.com/"
+           review="review.cyanogenmod.com" />
+  <remote  name="private"
+           fetch="ssh://git@github.com" />
+  <remote  name="gh"
+           fetch="https://github.com/"
+           review="master" />
  <remote  name="gh"
            fetch="https://github.com/"
            review="gerrit.aokp.co"
            revision="ics" />
-
-  <remote  name="private"
-           fetch="ssh://git@github.com" />
-
-  <default revision="refs/heads/ics"
-           remote="gh"
-           sync-j="4" />
+ <default revision="refs/heads/ics"
+           remote="github"
+           sync-j="7" />
 
   <project path="build" name="Snuzzo/android_build">
     <copyfile src="core/root.mk" dest="Makefile" />
