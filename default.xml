@@ -34,7 +34,7 @@
   <project path="build" name="CarbonDev/android_build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="android" name="Snuzzo/android" remote="cm" revision="carbonb-jb3" />
+  <project path="android" name="Snuzzo/android" remote="cm" revision="carbon-jb3" />
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
   <project path="bionic" name="CarbonDev/android_bionic" groups="pdk" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
